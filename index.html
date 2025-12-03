@@ -11,18 +11,28 @@
 <body>
     <!-- =============== HEADER =============== -->
     <header class="header">
-        <div class="container header-inner">
-            <div class="logo">
-                <span class="logo-icon">🎓</span>
-                <span class="logo-text">Anh Thợ Code</span>
-            </div>
+    <div class="container header-inner">
 
-            <button class="cart-btn" id="cartBtn">
-                🛒
-                <span class="cart-count" id="cartCount">0</span>
-            </button>
+        <!-- LOGO -->
+        <div class="logo">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">Anh Thợ Code</span>
         </div>
-    </header>
+
+        <!-- MENU -->
+        <nav class="nav-menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+        </nav>
+
+        <!-- CART -->
+        <button class="cart-btn" id="cartBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+    </div>
+</header>
 
     <!-- =============== HERO =============== -->
     <section class="hero">
@@ -95,7 +105,7 @@
             <h3>Quét mã QR để thanh toán</h3>
             <p>Tổng tiền: <strong id="qrTotal">0₫</strong></p>
 
-            <img id="qrImage" src="qr.jpg" alt="QR Thanh toán" class="qr-image">
+            <img id="qrImage" src="images/54ee06bb-1f3b-4b22-864c-fb87757ff1eb.jpg" alt="QR Thanh toán" class="qr-image">
 
             <div class="qr-email-block">
                 <label for="qrEmailInput">Nhập email để nhận xác nhận:</label>
@@ -122,5 +132,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
