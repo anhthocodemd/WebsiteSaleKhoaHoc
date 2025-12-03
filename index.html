@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOOO3 Academy - Đăng ký môn học</title>
+
+    <!-- LINK CSS: đảm bảo file tên đúng là styles.css và nằm cùng thư mục -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- =============== HEADER =============== -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Anh Thợ Code</span>
+            </div>
+
+            <button class="cart-btn" id="cartBtn">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- =============== HERO =============== -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Đăng ký môn học nhanh gọn</h1>
+                <p>
+                    Chọn các môn như WED201c, PRF192, PRO192, DBI202...  
+                    Thêm vào giỏ, xem tổng tiền và tiến hành thanh toán
+                </p>
+                <div class="hero-badge">
+                    <span>Dành cho sinh viên IT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== DANH SÁCH MÔN HỌC =============== -->
+    <main class="courses">
+        <div class="container">
+            <h2 class="section-title">Danh sách môn học</h2>
+            <p class="section-subtitle">
+                Chọn môn học bạn muốn đăng ký hoặc dịch vụ thêm vào giỏ hàng.
+            </p>
+
+            <!-- JS sẽ render card môn học vào đây -->
+            <h2 class="section-title">Môn học</h2>
+            <div class="course-list" id="courseListCourses"></div>
+
+            <h2 class="section-title">Dịch vụ</h2>
+            <div class="course-list" id="courseListServices"></div>
+
+        </div>
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p><span></span> Anh Thợ Code. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =============== MODAL GIỎ HÀNG =============== -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Giỏ môn học</h3>
+                <button class="cart-close-btn" id="cartCloseBtn">✕</button>
+            </div>
+
+            <div class="cart-modal-body">
+                <div id="cartItems"></div>
+                <p class="cart-empty" id="cartEmptyMessage">
+                    Giỏ đang trống, hãy thêm vài môn nhé.
+                </p>
+            </div>
+
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    Tổng: <span id="cartTotal">0₫</span>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== MODAL QR THANH TOÁN =============== -->
+    <div class="qr-modal" id="qrModal">
+        <div class="qr-modal-content">
+            <h3>Quét mã QR để thanh toán</h3>
+            <p>Tổng tiền: <strong id="qrTotal">0₫</strong></p>
+
+            <img id="qrImage" src="images/54ee06bb-1f3b-4b22-864c-fb87757ff1eb.jpg" alt="QR Thanh toán" class="qr-image">
+
+            <div class="qr-email-block">
+                <label for="qrEmailInput">Nhập email để nhận xác nhận:</label>
+                <input
+                    type="email"
+                    id="qrEmailInput"
+                    class="qr-email-input"
+                    placeholder="vd: sinhvien@gmail.com"
+                />
+            </div>
+
+            <p id="qrSuccess" class="qr-success" style="display:none;">
+                ✅ Cảm ơn bạn! Đơn hàng đã được ghi nhận.
+            </p>
+
+            <div class="qr-actions">
+                <button class="btn btn-primary" id="qrConfirmBtn">Xác nhận thanh toán</button>
+                <button class="btn btn-outline" id="qrCloseBtn">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
