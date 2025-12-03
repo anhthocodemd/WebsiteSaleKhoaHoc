@@ -464,3 +464,91 @@ body {
     color: #ff6f00 !important;
     font-weight: 700 !important;
 }
+
+/* ==========================================================
+   About 
+   ========================================================== */
+   .about-hero {
+    background: linear-gradient(to bottom right, #4c52ff, #6574f7);
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.about-page {
+    padding: 60px 0;
+}
+
+.section-desc {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: #1a2b6d;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.nav-menu a:hover {
+    color: #4c52ff;
+}
+
+/* ======== Study Method Section ======== */
+.study-method {
+    background: linear-gradient(to bottom right, #eef7ff, #f7fbff);
+    padding: 40px 20px;
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.study-method h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0d47a1;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.study-method p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.study-method ul {
+    list-style: none;
+    padding: 0;
+}
+
+.study-method li {
+    margin-bottom: 18px;
+    padding-left: 0;
+}
+
+.study-method li strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #003c8f;
+}
+
+.study-method li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+}
